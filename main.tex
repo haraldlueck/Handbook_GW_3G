@@ -1,0 +1,70 @@
+%%%%%%%%%%%%%%%%%%%% author.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Template for the Handbook of Gravitational Wave Astronomy
+%
+%%%%%%%%%%%%%%%% Springer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[graybox, nosecnum]{svmult}
+
+% choose options for [] as required from the list
+% in the Reference Guide
+
+\usepackage{mathptmx}       % selects Times Roman as basic font
+\usepackage{helvet}         % selects Helvetica as sans-serif font
+\usepackage{courier}        % selects Courier as typewriter font
+\usepackage{type1cm}        % activate if the above 3 fonts are
+                            % not available on your system
+%
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+\usepackage{hyperref}        %for hyperlinks
+\usepackage{soul}            % for high-lighting of text
+\hypersetup{colorlinks=true,urlcolor=blue}
+%
+\usepackage[square,numbers]{natbib}
+%\bibliographystyle{ieeetr} 
+\newcommand{\hbindex}[1]{\hl{#1}\index{#1}}  %highlights index entries
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%\tableofcontents{}
+\title*{The third generation of ground based gravitational wave observatories}
+% Use \titlerunning{3G Detectors} for an abbreviated version of
+% your contribution title if the original one is too long
+\author{Harald Lück \thanks{corresponding author} and Michele Punturo}
+% Use \authorrunning{Short Title} for an abbreviated version of
+% your contribution title if the original one is too long
+\institute{Harald Lück \at Max-Planck Institute for gravitational wave physics and institute for gravitational wave physics of the Leibniz Universität Hannover, Callinstzr. 38, 30167 Hannover, Germany, \email{harald.lueck@aei.mpg.de}
+\and Second Author \at Institute 2, Address of Institute 2 \email{name2@email.address}}
+%
+% Use the package "url.sty" to avoid
+% problems with special characters
+% used in your e-mail or web address
+%
+\maketitle
+%
+\abstract{Each chapter should be preceded by an abstract (about 250 words) that summarizes the content. The abstract will appear \textit{online} at \url{www.SpringerLink.com} and be available with unrestricted access. This allows unregistered users to read the abstract as a teaser for the complete chapter. Please do not include reference citations, cross-references or undefined abbreviations in the abstract.}
+\section{Keywords} 
+Please provide keywords required to facilitate search of chapter on web; maximum 10 keywords.
+\section{Introduction}
+Introduction to the chapter; length depends on the topic describing importance of subject and content
+
+\section{\textit{Main Text}}
+This is the main body of the chapter and should include sections and subsections. Please re-name this heading and add your own subheadings.\\
+{\bf Note: Footnotes should not be used! Avoid acknowledgements other than those related to funding.}
+\section{Cross-References \textit{(if applicable)}}
+Include a list of related entries from the handbook here that may be of further interest to the readers.
+
+\section{\color{red}Note: References and Citations}
+\subsection{\color{red}References}
+Should be restricted to the minimum number of essential references compatible with good scientific practice.\\
+Include all works that are cited in the chapter and that have been published (including on the Internet) or accepted for publication. Personal communications and unpublished works should only be mentioned in the text. \textit{Do not use footnotes as a substitute for a reference list.}\
+\subsection{\color{red}Citations}
+All references should be \textit{cited} in the text by the numbered style [n]; \cite{basic-contrib}, \cite{basic-online}, \cite{basic-DOI}, \cite{basic-journal} \cite{basic-mono}, etc. The recommended style for references is \textbf{Springer Basic Style} (examples are given below).
+\input{reference.tex}
+\end{document}
